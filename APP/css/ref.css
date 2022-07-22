@@ -1,0 +1,149 @@
+body{
+	margin: 20px;
+	padding: 10px;
+}
+
+header{
+	height: 190px;
+	background-color: #7776;
+	padding: 10px;
+	background-position: top;
+	background-image: url('../images/flywheel.jpg');
+	background-size: 105%;
+	background-repeat: no-repeat;
+	text-align: center;
+} 
+
+h1{
+ color: #ffa800;
+ text-align: center;
+ font-size: 250%;
+ font-style: bold;
+ margin: 3px ;
+ padding: 20px;
+}
+
+nav a{
+	border-radius: 4px;
+	text-align: center;
+	background-color: rgba(253,216,144,0.5);
+	color:#1f3658;
+	font-size: 20px;
+	margin: 35px;
+	padding: 10px 60px;
+	text-decoration: none;
+}
+nav a:hover{
+	background-color:#ffa904;
+}
+
+nav a.active{
+	background-color:#ffa904;
+}
+
+h2{
+	color: #0b2264;
+	font-size: 30px;
+}	
+
+.left {
+	margin-right: 1%;
+	margin-top: -25px;
+	background-color: #777613;
+	color: #ffffff;
+	width: 210px;
+	padding: 10px;
+	float:left;
+}
+
+.right {
+	width: 100%;
+	margin: 20px;
+	font-size: 18px;
+		
+}
+
+aside a img{
+	display: block;
+	width: 180px;
+  	height: 100px;
+	margin: 30px auto;
+	border: 3px solid #252e08;
+}
+aside{
+	margin-right: 10px;
+}
+
+/*
+
+
+body{
+	margin: 20px;
+	padding: 10px;
+}
+
+header{
+	height: 190px;
+	background-color: #7776;
+	padding: 10px;
+	background-position: top;
+	background-image: url('../images/flywheel.jpg');
+	background-size: 105%;
+	background-repeat: no-repeat;
+	text-align: center;
+} 
+
+h1{
+ color: #ffa800;
+ text-align: center;
+ font-size: 250%;
+ font-style: bold;
+ margin: 3px;
+ padding: 20px;
+}
+
+nav a{
+	border-radius: 4px;
+	text-align: center;
+	background-color: rgba(253,216,144,0.5);
+	color:#1f3658;
+	font-size: 20px;
+	margin: 35px;
+	padding: 10px 60px;
+	text-decoration: none;
+}
+
+nav a.active{
+	background-color:#ffa904;
+}
+
+h2{
+	color: #0b2264;
+	font-size: 30px;
+}	
+
+.left {
+	margin-right: 1%;
+	margin-top: -25px;
+	background-color: #777613;
+	color: #ffffff;
+	width: 210px;
+	padding: 10px;
+	float:left;
+}
+
+.right {
+	width: 100%;
+	margin: 20px;
+	font-size: 18px;
+		
+}
+
+aside a img{
+	display: block;
+	width: 180px;
+  height: 100px;
+	margin: 30px auto;
+	border: 3px solid #252e08;
+}
+*/
