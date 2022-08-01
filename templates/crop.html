@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Crop Advisor</title>
+	<link href='https://fonts.googleapis.com/css?family=Albert Sans' rel='stylesheet'>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<h1>Crop Advisor</h1>
+		<nav>
+			<a href="index.html" >Home</a>
+			<a href="crop.html" class = "active">Crop</a>
+			<a href="fertilizer.html">Fertilizer</a>
+		</nav>
+	</header>
+	<main>
+		<section class = "right">
+			<h2>Crop Recommender</h2>
+			<div class="desc">
+			<h3>Crop Recommendation</h3>
+			<p>Ultimate Frisbee is a sport that I never played myself, but its popularity is something hard to ignore in many Midwestern college towns.  Students (and people who wish they were still students) spend the few briefs months of good weather, sprinting down fields, hurling frisbees, and yelling "Stack!!".</p>
+			<p>What I find much more entertaining is the large number of people who continue to play when the weather gets windy and the night sky darkens around oh....4:15pm.  The sight of frisbees boomeranging in the wind is topped only by the knowledge that even when you can't see them, those same plastic discs of death are probably hurtling through the dark night sky at 8 or 9 o'clock in the evening.</p>
+			<p>What I find much more entertaining is the large number of people who continue to play when the weather gets windy and the night sky darkens around oh....4:15pm.  The sight of frisbees boomeranging in the wind is topped only by the knowledge that even when you can't see them, those same plastic discs of death are probably hurtling through the dark night sky at 8 or 9 o'clock in the evening.</p>
+			</div>
+			<div class="form">
+				<strong>Fill the following :</strong>
+				<form method="post" action="/predict_crop">
+					<label for="N">Nitrogen</label>
+					<input type="number" name="N" placeholder="Ex: 12-10 ">
+					<label for="K">Potassium</label>
+					<input type="number" name="K">
+					<label for="P">Phosporous</label>
+					<input type="number" name="P">
+					<label for="ph">pH</label>
+					<input type="number" name="ph">
+					<label for="rainfall">RainFall</label>
+					<input type="number" name="rainfall">
+					<input type="submit" value="Predict">
+				</form>
+			</div>
+		</section>
+	</main>
+
+</body>
+</html>
