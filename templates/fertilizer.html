@@ -4,36 +4,57 @@
 	<meta charset="UTF-8">
 	<title>Crop Advisor</title>
 	<link href='https://fonts.googleapis.com/css?family=Albert Sans' rel='stylesheet'>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 	<header>
 		<h1>Crop Advisor</h1>
 		<nav>
-			<a href="index.html" >Home</a>
-			<a href="crop.html">Crop</a>
-			<a href="fertilizer.html" class = "active">Fertilizer</a>
+			<a href="index" >Home</a>
+			<a href="crop">Crop</a>
+			<a href="fertilizer" class = "active">Fertilizer</a>
 		</nav>
 	</header>
-		<section class = "right">
+	<main>
 			<h2>Fertilizer Recommender</h2>
 			<div class="form">
 				<strong>Fill the following :</strong>
-				<form method="post" action="/predict_crop">
-					<label for="N">Nitrogen</label>
-					<input type="number" name="N" placeholder="Ex: 12-10 ">
-					<label for="K">Potassium</label>
-					<input type="number" name="K">
-					<label for="P">Phosporous</label>
-					<input type="number" name="P">
-					<label for="ph">pH</label>
-					<input type="number" name="ph">
-					<label for="rainfall">RainFall</label>
-					<input type="number" name="rainfall">
+				<form method="post" action="/predict/fertilizer">
+
+					<label for="temperature">Temperature</label>
+					<input type="number" name="temperature" placeholder="Ex: 25">
+
+					<label for="humidity">Humidity</label>
+					<input type="number" name="humidity" placeholder="Ex: 71 ">
+
+					<label for="moisture">Moisture</label>
+					<input type="number" name="moisture" placeholder="Ex: 71 ">
+
+					<label for="soil">Soil Type:</label>
+					<select name="soil">
+					{% for k in soil_types %}
+					  <option value="{{k}}">{{soil_types[k]}}</option>
+					{% endfor %}
+					</select>
+
+
+					<label for="crop">Crop Type:</label>
+					<select name="soil">
+					{% for k in crop_types %}
+					  <option value="{{k}}">{{crop_types[k]}}</option>
+					{% endfor %}
+					</select>
+
+					<label for="N">Nitrogen(N)</label>
+					<input type="number" name="N" placeholder="Ex: 50">
+					<label for="P">Phosporous(P)</label>
+					<input type="number" name="P" placeholder="Ex: 32 ">
+					<label for="K">Potassium(K)</label>
+					<input type="number" name="K" placeholder="Ex: 50 ">
+
 					<input type="submit" value="Predict">
 				</form>
 			</div>
-		</section>
 	</main>
 </body>
 </html>

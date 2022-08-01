@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Crop Advisor</title>
+	<link href='https://fonts.googleapis.com/css?family=Albert Sans' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+	<header>
+		<h1>Crop Advisor</h1>
+		<nav>
+			<a href="../index">Home</a>
+			<a href="../crop" class = "active">Crop</a>
+			<a href="../fertilizer">Fertilizer</a>
+		</nav>
+	</header>
+	<main>
+        {% if(result) %}
+            <p> For given values : 
+                <br>
+                Nitrogen : {{ input_values[0] }} ,
+                Potassium : {{ input_values[1] }},
+                Phosporous : {{ input_values[2] }},
+                Temperature : {{ input_values[3] }},
+                Humidity : {{ input_values[4] }},
+                pH : {{ input_values[5] }},
+                RainFall : {{ input_values[6] }}
+            </p>
+            <hr>
+            <center>
+            <figure>
+                <img src= "/static//images/crop/{{result}}.jpg" alt="{{result}} image">
+                <figcaption>{{ result }}</figcaption>
+            </figure>
+            
+            </center>
+            <h3 class="result_text">Recommended Crop : {{ result.upper() }} </h3>
+        {% endif %}
+    </main>
+</body>
+</html>
