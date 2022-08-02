@@ -106,4 +106,10 @@ select{
     border-radius: 3px;
     border-block-color: #9bf6ff;
     margin-bottom: 4px;
+	font-size: 18px;
+}
+option{
+	height: 50px;
+	margin:2px auto;
+	font-size: 18px;
 }
