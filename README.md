@@ -1,7 +1,7 @@
 # Crop-Advising-System
 
 <center>
-<img src="OutputImages/system.jpg" alt="Home" width ="100" >
+<img src="OutputImages/system.jpg" alt="Home" width ="500" height = "500" >
 </center>
 ### Output Images
 
