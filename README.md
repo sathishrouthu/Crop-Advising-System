@@ -1,7 +1,7 @@
 # Crop-Advising-System
-# Attendance_System-With-Face_Verification
+
 <center>
-<img src="OutputImages/system.jpg" alt="Home" width ="1000" >
+<img src="OutputImages/system.jpg" alt="Home" width ="100" >
 </center>
 ### Output Images
 
