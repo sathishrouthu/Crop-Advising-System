@@ -1,7 +1,7 @@
 # Crop-Advising-System
 # Attendance_System-With-Face_Verification
 
-![system](OutputImages/System_Overview.jpg)
+![system](OutputImages/system.jpg)
 
 ### Output Images
 
